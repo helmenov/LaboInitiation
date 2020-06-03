@@ -1,10 +1,9 @@
 # リンク集
 
-[https://scrapbox.io/kiyasu-sonoda-labo/]
+[喜安研紹介1](https://scrapbox.io/kiyasu-sonoda-labo/)
 
-[https://sites.google.com/view/kiyasu-sonoda-labo/]
+[喜安研紹介2](https://sites.google.com/view/kiyasu-cis-nagasaki-u/)
 
-[https://sites.google.com/site/kiyasulabotips]
+[喜安研研究室内情報](https://sites.google.com/site/kiyasulabotips)
 
-[https://www.idsci.nagasaki-u.ac.jp](情報データ科学部)
-
+[情報データ科学部](https://www.idsci.nagasaki-u.ac.jp)
