@@ -24,6 +24,17 @@ kiyasu-lab@cis.nagasaki-u.ac.jp
 このうち，情報演習室のメアド`@cis`は，大学に在籍中ずっと利用できます．
 大学のメアド`@ms`は，学部時代と大学院時代で異なります．大学院に進学すると，新しいメアドが作られ，学部時代のメアドは消されます．
 
+### ※職員の持つメールアドレス
+
+職員は3つ持っています．
+
+1. 情報演習室のメールアドレス：`***@cis.nagasaki-u.ac.jp`
+2. 大学のメールアドレス１（MicroSoft）：`aa********@ms.nagasaki-u.ac.jp`
+   1. office365と連携
+   2. LACSと連携
+3. 大学のメールアドレス２（基盤センター）：`***@nagasaki-u.ac.jp` 
+
+
 ## メールの仕組み
 
 メールは，
@@ -68,9 +79,18 @@ kiyasu-lab@cis.nagasaki-u.ac.jp
 
 `@ms`のPOP,IMAP,SMTPのサーバ名は，
 - ユーザー名 `bb********@ms.nagasaki-u.ac.jp`
-- POPサーバー　`outlook.office365.com` ポート 995 TLS
-- IMAPサーバー `outlook.office365.com` ポート 993 TLS
+- POPサーバー　`outlook.office365.com` ポート 995 暗号化 TLS
+- IMAPサーバー `outlook.office365.com` ポート 993 暗号化 TLS
 - SMTPサーバー `smtp.office365.com` ポート587 暗号化 STARTTLS
+
+`@cis`のPOP,SMTPのサーバ名は，
+- ユーザ名 `b******`
+- POPサーバ　`mailserver.cis.nagasaki-u.ac.jp` ポート 110
+- SMTPサーバ　`mailserver.cis.nagasaki-u.ac.jp` ポート 25
+です．これらは暗号化ポートではなく，POPはplainパスワード認証．SMTPはPOP-before-SMTP（SMTPアクセスのためにまずPOPアクセスする）です．
+
+`@cis`のサーバは外部から利用しにくいため，私は，`@cis`は`@ms`へ転送（`.forward`）して`@ms`にpopまたはimapアクセスしています．
+
 
 ## GMail を使う
 
@@ -109,3 +129,13 @@ GMail の`[設定]`-`[アカウントとインポート]`に
 受信サーバの設定で，`@ms`のメアドに届いたメールを読めます．
 
 送信サーバの設定をすることで，書いたメールを`@ms`から送信できます．
+
+# まとめ
+
+|メールドメイン|POP3サーバ|POP3ポート|POP3暗号化|IMAP4サーバ|IMAP4ポート|IMAP4暗号化|SMTPサーバ|SMTPポート|SMTP暗号化|
+|---|---|---|---|---|---|---|---|---|---|
+|****@cis.nagasaki-u.ac.jp|mailserver.cis.nagasaki-u.ac.jp|110|PLAIN|-|-|-|mailserver.cis.nagasaki-u.ac.jp|25|-(pop_before_smtp)|
+|****@ms.nagasaki-u.ac.jp|outlook.office365.com|995|TLS|outlook.office365.com|993|TLS|smtp.office365.com|587|TLS|
+|****@nagasaki-u.ac.jp|mboxhost.cc.nagasaki-u.ac.jp|995|TLS|mboxhost.cc.nagasaki-u.ac.jp|993|TLS|mboxhost.cc.nagasaki-u.ac.jp|587|TLS|
+
+
