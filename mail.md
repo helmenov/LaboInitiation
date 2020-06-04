@@ -2,15 +2,13 @@
 
 ## 研究室メール
 
-```
-kiyasu-lab@cis.nagasaki-u.ac.jp
-```
+`kiyasu-lab@cis.nagasaki-u.ac.jp`
 
-です．演習室のあるホストがqmail という SMTP サーバソフトで管理しています．
+です．演習室のあるホストが qmail という SMTP サーバソフトで管理しています．
 
 研究室の諸々の連絡・相談は，このメール宛に投稿されます．
 
-このメールは，皆さんの `bb********@ms.nagasaki-u.ac.jp` というメールアドレスに転送され，受信されます．4月新配属のタイミングで転送先リストが更新されます．
+このメールは，皆さんの `bb********@ms.nagasaki-u.ac.jp` というメールアドレスに転送され，受信されます．4 月新配属のタイミングで転送先リストが更新されます．
 
 ## 皆さんの持つメールアドレス
 
@@ -26,14 +24,13 @@ kiyasu-lab@cis.nagasaki-u.ac.jp
 
 ### ※職員の持つメールアドレス
 
-職員は3つ持っています．
+職員は 3 つ持っています．
 
 1. 情報演習室のメールアドレス：`***@cis.nagasaki-u.ac.jp`
 2. 大学のメールアドレス１（MicroSoft）：`aa********@ms.nagasaki-u.ac.jp`
-   1. office365と連携
-   2. LACSと連携
-3. 大学のメールアドレス２（基盤センター）：`***@nagasaki-u.ac.jp` 
-
+   1. office365 と連携
+   2. LACS と連携
+3. 大学のメールアドレス２（基盤センター）：`***@nagasaki-u.ac.jp`
 
 ## メールの仕組み
 
@@ -77,20 +74,22 @@ kiyasu-lab@cis.nagasaki-u.ac.jp
 有名どころで，Thunderbird，Outlook，GMail でしょうか．
 いずれも，受信サーバと送信サーバを設定します．
 
-`@ms`のPOP,IMAP,SMTPのサーバ名は，
+`@ms`の POP,IMAP,SMTP のサーバ名は，
+
 - ユーザー名 `bb********@ms.nagasaki-u.ac.jp`
-- POPサーバー　`outlook.office365.com` ポート 995 暗号化 TLS
-- IMAPサーバー `outlook.office365.com` ポート 993 暗号化 TLS
-- SMTPサーバー `smtp.office365.com` ポート587 暗号化 STARTTLS
+- POP サーバー　`outlook.office365.com` ポート 995 暗号化 TLS
+- IMAP サーバー `outlook.office365.com` ポート 993 暗号化 TLS
+- SMTP サーバー `smtp.office365.com` ポート 587 暗号化 STARTTLS
 
-`@cis`のPOP,SMTPのサーバ名は，
+`@cis`の POP,SMTP のサーバ名は，
+
 - ユーザ名 `b******`
-- POPサーバ　`mailserver.cis.nagasaki-u.ac.jp` ポート 110
-- SMTPサーバ　`mailserver.cis.nagasaki-u.ac.jp` ポート 25
-です．これらは暗号化ポートではなく，POPはplainパスワード認証．SMTPはPOP-before-SMTP（SMTPアクセスのためにまずPOPアクセスする）です．
+- POP サーバ　`mailserver.cis.nagasaki-u.ac.jp` ポート 110
+- SMTP サーバ　`mailserver.cis.nagasaki-u.ac.jp` ポート 25
 
-`@cis`のサーバは外部から利用しにくいため，私は，`@cis`は`@ms`へ転送（`.forward`）して`@ms`にpopまたはimapアクセスしています．
+です．これらは暗号化ポートではなく，POP は plain パスワード認証．SMTP は POP-before-SMTP（SMTP アクセスのためにまず POP アクセスする）です．
 
+`@cis`のサーバは外部から利用しにくいため，私は，`@cis`は`@ms`へ転送（`.forward`）して`@ms`に pop または imap アクセスしています．
 
 ## GMail を使う
 
@@ -124,18 +123,16 @@ GMail の`[設定]`-`[アカウントとインポート]`に
 
 `[デフォルトの返信モードを選択]`は`[メールを受信したアドレスから返信する]`にチェックすること．
 
-## Thunderbird, Outlookなどを使う
+## Thunderbird, Outlook などを使う
 
 受信サーバの設定で，`@ms`のメアドに届いたメールを読めます．
 
 送信サーバの設定をすることで，書いたメールを`@ms`から送信できます．
 
-# まとめ
+## まとめ
 
-|メールドメイン|POP3サーバ|POP3ポート|POP3暗号化|IMAP4サーバ|IMAP4ポート|IMAP4暗号化|SMTPサーバ|SMTPポート|SMTP暗号化|
-|---|---|---|---|---|---|---|---|---|---|
-|****@cis.nagasaki-u.ac.jp|mailserver.cis.nagasaki-u.ac.jp|110|PLAIN|-|-|-|mailserver.cis.nagasaki-u.ac.jp|25|-(pop_before_smtp)|
-|****@ms.nagasaki-u.ac.jp|outlook.office365.com|995|TLS|outlook.office365.com|993|TLS|smtp.office365.com|587|TLS|
-|****@nagasaki-u.ac.jp|mboxhost.cc.nagasaki-u.ac.jp|995|TLS|mboxhost.cc.nagasaki-u.ac.jp|993|TLS|mboxhost.cc.nagasaki-u.ac.jp|587|TLS|
-
-
+| メールドメイン              | POP3 サーバ                       | POP3 ポート | POP3 暗号化 | IMAP4 サーバ                   | IMAP4 ポート | IMAP4 暗号化 | SMTP サーバ                       | SMTP ポート | SMTP 暗号化        |
+| --------------------------- | --------------------------------- | ----------- | ----------- | ------------------------------ | ------------ | ------------ | --------------------------------- | ----------- | ------------------ |
+| `****@cis.nagasaki-u.ac.jp` | `mailserver.cis.nagasaki-u.ac.jp` | 110         | PLAIN       | -                              | -            | -            | `mailserver.cis.nagasaki-u.ac.jp` | 25          | -(pop_before_smtp) |
+| `****@ms.nagasaki-u.ac.jp`  | `outlook.office365.com`           | 995         | TLS         | `outlook.office365.com`        | 993          | TLS          | `smtp.office365.com`              | 587         | TLS                |
+| `****@nagasaki-u.ac.jp`     | `mboxhost.cc.nagasaki-u.ac.jp`    | 995         | TLS         | `mboxhost.cc.nagasaki-u.ac.jp` | 993          | TLS          | `mboxhost.cc.nagasaki-u.ac.jp`    | 587         | TLS                |
