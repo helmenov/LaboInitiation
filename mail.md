@@ -131,8 +131,14 @@ GMail の`[設定]`-`[アカウントとインポート]`に
 
 ## まとめ
 
-| メールドメイン              | POP3 サーバ                       | POP3 ポート | POP3 暗号化 | IMAP4 サーバ                   | IMAP4 ポート | IMAP4 暗号化 | SMTP サーバ                       | SMTP ポート | SMTP 暗号化        |
-| --------------------------- | --------------------------------- | ----------- | ----------- | ------------------------------ | ------------ | ------------ | --------------------------------- | ----------- | ------------------ |
-| `****@cis.nagasaki-u.ac.jp` | `mailserver.cis.nagasaki-u.ac.jp` | 110         | PLAIN       | -                              | -            | -            | `mailserver.cis.nagasaki-u.ac.jp` | 25          | -(pop_before_smtp) |
-| `****@ms.nagasaki-u.ac.jp`  | `outlook.office365.com`           | 995         | TLS         | `outlook.office365.com`        | 993          | TLS          | `smtp.office365.com`              | 587         | TLS                |
-| `****@nagasaki-u.ac.jp`     | `mboxhost.cc.nagasaki-u.ac.jp`    | 995         | TLS         | `mboxhost.cc.nagasaki-u.ac.jp` | 993          | TLS          | `mboxhost.cc.nagasaki-u.ac.jp`    | 587         | TLS                |
+| メールドメイン              | プロトコル | サーバ                            | ポート | 暗号化             |
+| --------------------------- | ---------- | --------------------------------- | ------ | ------------------ |
+| `****@cis.nagasaki-u.ac.jp` | POP3       | `mailserver.cis.nagasaki-u.ac.jp` | 110    | PLAIN              |
+|                             | IMAP4      | -                                 | -      | -                  |
+|                             | SMTP       | `mailserver.cis.nagasaki-u.ac.jp` | 25     | -(pop_before_smtp) |
+| `****@ms.nagasaki-u.ac.jp`  | POP3       | `outlook.office365.com`           | 995    | TLS                |
+|                             | IMAP4      | `outlook.office365.com`           | 993    | TLS                |
+|                             | SMTP       | `smtp.office365.com`              | 587    | TLS                |
+| `****@nagasaki-u.ac.jp`     | POP3       | `mboxhost.cc.nagasaki-u.ac.jp`    | 995    | TLS                |
+|                             | IMAP4      | `mboxhost.cc.nagasaki-u.ac.jp`    | 993    | TLS                |
+|                             | SMTP       | `mboxhost.cc.nagasaki-u.ac.jp`    | 587    | TLS                |
