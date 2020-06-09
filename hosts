@@ -1,0 +1,173 @@
+# DNSservers
+133.45.152.2 nameserver.cis.nagasaki-u.ac.jp			
+133.45.8.13 siebold.cc.nagasaki-u.ac.jp			
+133.45.64.5 mars.cc.nagasaki-u.ac.jp			
+
+# mailserver
+133.45.152.3 mailserver.cis.nagasaki-u.ac.jp			
+133.45.35.10 mboxhost.net.nagasaki-u.ac.jp			
+
+#===============================================
+# kiyasu laboratory network 133.45.130.129/25 ==
+#===============================================
+## Gateway
+133.45.130.129	gateway
+
+133.45.130.130			
+133.45.130.131			
+133.45.130.132			
+133.45.130.133			
+133.45.130.134			
+133.45.130.135			
+133.45.130.136	fujii # 就職担当事務PC		
+133.45.130.137	
+133.45.130.138	motoshima # 喜安前室PC	元島
+133.45.130.139			
+133.45.130.140	K4	#喜安
+133.45.130.141			
+133.45.130.142	kn1	# 喜安
+133.45.130.143	kn2	# @Kiyasu
+133.45.130.144			
+133.45.130.145			
+133.45.130.146	
+133.45.130.147	
+133.45.130.148	
+133.45.130.149	KLGuest	# 医学部RS
+
+# Student's machine primary KLx 133.45.130.150-166 (last number x = 133.45.130.15x)
+133.45.130.150	KL00
+133.45.130.151	KL01  kimura  JD1MS23	
+133.45.130.152	KL02  umino  CNBRLN2
+133.45.130.153	KL03  tsutsumi  CNJRLN2
+133.45.130.154	KL04  kakizoe  CSXSLN2
+133.45.130.155	KL05	
+133.45.130.156	KL06	
+133.45.130.157	KL07  motomura  JD09823	
+133.45.130.158	KL08  shiraishi  JD1KS23	
+133.45.130.159	KL09  komori  JD0FS23	
+133.45.130.160	KL10  yamashita  JCWKS23
+133.45.130.161	KL11  furukawa  CSSQLN2	
+133.45.130.162	KL12	
+133.45.130.163	KL13  May  CSRVLN2
+133.45.130.164	KL14	
+133.45.130.165	KL15  Moh  H9QN0R2
+133.45.130.166	KL16
+
+#==Almni=====================
+# Onda  M4ZNP02
+# Ito  94ZNP02
+# Tashiro  2Q4NZ72
+# Ishimaru  2L1JLBX
+# Shiomichi  4R3P4J2
+# Nishiyama  364NZ72
+# Noguchi  CR9TJ32
+# Kuwahara  CSWVLN2
+# Shichida  7D9XCT2
+# Sonoda  4QHX4J2
+# Miyahara  36HNZ72
+# Liang  BQ9TJ32
+# Wada  7D5YCT2
+# Shimizu  35THZ72
+# Arikawa  4QFS4J2
+# Xie  7CRPCT2
+# Kumamoto  CSSQLN2
+# Kuroda  CSWVLN2
+#=============================
+
+133.45.130.167	
+133.45.130.168	
+133.45.130.169	
+
+# Student's machine secondary KLx_v 133.45.130.170-185 (last number x = 133.45.130.17x)
+133.45.130.170	KL00_v
+133.45.130.171	KL01_v  kimura2	
+133.45.130.172	KL02_v  umino2
+133.45.130.173	KL03_v 	tsutsumi2
+133.45.130.174	KL04_v  kakizoe2
+133.45.130.175	KL05_v	
+133.45.130.176	KL06_v	
+133.45.130.177	KL07_v  motomura2	
+133.45.130.178	KL08_v  shiraishi2	
+133.45.130.179	KL09_v  komori2	
+133.45.130.180	KL10_v  yamashita2
+133.45.130.181	KL11_v	
+133.45.130.182	KL12_v	
+133.45.130.183	KL13_v  May2
+133.45.130.184  KL14_v	
+133.45.130.185	KL15_v  Moh2
+133.45.130.186	KL16_v
+
+
+133.45.130.187	uragasumi   # @Sonoda
+133.45.130.188	
+133.45.130.189	
+133.45.130.190	uragasumi2  # @Sonoda
+133.45.130.191	sonoda_wlan # 無線LANルータ buffalo Airstation (dd-wrtに入れ替え)
+133.45.130.192			
+133.45.130.193	yumegokoro  esxi    # @Sonoda
+133.45.130.194			
+133.45.130.195	c3350   # 旧複合機 docuprint c3305 @ 前室
+133.45.130.196			
+133.45.130.197	docuprint305 # モノクロプリンタ	docuprint_305	居室
+133.45.130.198	mc843  # 新複合機　OKI mc843 @ 居室
+133.45.130.199			
+133.45.130.200			
+133.45.130.201	k1  # 
+133.45.130.202	k2  # 
+133.45.130.203	k3	# 
+133.45.130.204	k4	# 水槽
+133.45.130.205	k5  #
+133.45.130.206	deepbox # 内視鏡AI GPUマシン	
+133.45.130.207	plathomeLS # プラットホーム光切断	
+133.45.130.208	kl-note2	
+133.45.130.209	warpstar    # 無線LANルータ	NEC warpstar	
+133.45.130.210	airstation  # 無線LANルータ	buffalo	AirStation 
+133.45.130.211	tsakailab1
+133.45.130.212	tsakailab2
+133.45.130.213			
+133.45.130.214			
+133.45.130.215			
+133.45.130.216			
+133.45.130.217			
+133.45.130.218			
+133.45.130.219	kl-note3
+133.45.130.220	kl-note1
+133.45.130.221	NIS1  s1 # @Student Room
+133.45.130.222			
+133.45.130.223	NIS2  s2 # @Student Room
+133.45.130.224			
+133.45.130.225			
+133.45.130.226			
+133.45.130.227			
+133.45.130.228			
+133.45.130.229			
+133.45.130.230			
+133.45.130.231  qnap    # QNAS @Student Room
+133.45.130.232			
+133.45.130.233			
+133.45.130.234			
+133.45.130.235			
+133.45.130.236			
+133.45.130.237			
+133.45.130.238			
+133.45.130.239			
+133.45.130.240			
+133.45.130.241			
+133.45.130.242	ck	# Brother Color Printer @Kiyasu
+133.45.130.243			
+133.45.130.244	mfc8660dn # Brother Monochrome Printer @Sonoda
+133.45.130.245			
+133.45.130.246	ck2	# @Kiyasu
+133.45.130.247			
+133.45.130.248			
+133.45.130.249			
+133.45.130.250			
+133.45.130.251			
+133.45.130.252			
+133.45.130.253			
+133.45.130.254
+
+# Broadcast
+133.45.130.255  broadcast
+
+# end of file
